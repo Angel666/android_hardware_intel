@@ -1,0 +1,61 @@
+WBXML Library
+-------------
+Copyright (C) 2002-2003  Aymerick Jéhanne
+Copyright (C) 2006 Motorola
+http://opensource.motorola.com
+ 
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License (version 2.1) as published by the Free Software Foundation.
+ 
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+LGPL v2.1: http://www.gnu.org/licenses/lgpl.txt
+
+HISTORY
+-------
+This library is based on WBXML Library 0.7.2 and modified by Motorola.
+Unmodified version of the library can be found at,
+http://sourceforge.net/projects/wbxmllib
+
+
+GENERAL INFORMATION
+-------------------
+- libwbxml2
+  - A WBXML Parser (with a SAX like interface)
+  - A WBXML Encoder
+
+  Supported Languages:
+        - WML 1.0
+        - WTA 1.0
+        - WML 1.1
+        - SI 1.0 (tested)
+        - SL 1.0 (tested)
+        - CO 1.0
+        - CHANNEL 1.1
+        - WML 1.2
+        - WML 1.3
+        - PROV 1.0 (tested)
+        - WTA-WML 1.2
+        - CHANNEL 1.2
+        - EMN 1.0 (tested)
+        - DRMREL 1.0
+        - SYNCML 1.1 
+        - WV CSP 1.1 (partially tested)
+
+BUILD INSTRUCTIONS
+------------------
+Refer to Makefile in src directory for build and install instructions
+
+# -----   Added By Victor Havin ----- #
+Motorola comments:
+This parses is used by DM/OMA Client  Provisioning component 
+Location:  motorola/packages/apps/OMAProvisioning
+

@@ -1,0 +1,21 @@
+#ifndef _MRST_H
+#define _MRST_H
+
+#define FSB_FREQ_83SKU  83200
+#define FSB_FREQ_100SKU 99840
+#define FSB_FREQ_133SKU 133000
+
+#define FSB_FREQ_167SKU 167000
+#define FSB_FREQ_200SKU 200000
+#define FSB_FREQ_267SKU 267000
+#define FSB_FREQ_333SKU 333000
+#define FSB_FREQ_400SKU 400000
+
+/* Bus Select SoC Fuse value */
+#define BSEL_SOC_FUSE_MASK	0x7
+#define BSEL_SOC_FUSE_001	0x1 /* FSB 133MHz */
+#define BSEL_SOC_FUSE_101	0x5 /* FSB 100MHz */
+#define BSEL_SOC_FUSE_111	0x7 /* FSB 83MHz */
+
+
+#endif /* _MRST_H */

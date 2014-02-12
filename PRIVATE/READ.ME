@@ -1,0 +1,34 @@
+Build XEN-Hypervisor for GT-P5200/P5210/P5220 mini-HOWTO
+
+1. Build Environment and Compiler
+
+To build XEN-Hypervisor for GT-P52xx models, you should have a following
+environment
+
+	- Unbutu 10.04.4 LTS
+	- gcc (Ubuntu 4.4.3-4-ubuntu5.1) 4.4.3 - native GCC of Ubuntu 10.04
+
+If you use a different version or distribution of Linux, the build will be
+failed cause of difference in complier version.
+
+You can find useful resources to build XEN-Hypervisor for GT-P52xx in
+following URLs.
+
+	- http://releases.ubuntu.com/10.04.4/ : Ubuntu 10.04.4
+	- https://www.virtualbox.org/wiki/Downloads :
+		you can build XEN in a virtual machine if you don't use
+		Ubuntu 10.04.4
+
+2. Build Instructions
+
+2.1 Environment Variables
+
+export CROSS_COMPILE=
+export XEN_COMPILE_ARCH=x86_32
+
+2.2. Build XEN Hypervisor (xen.bin)
+
+cd ~/xen-vn
+make -j{NR_JOBS} xen
+objcopy -O binary ./xen/xen ./xen/xen.bin
+
